@@ -1,0 +1,50 @@
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  display: inline — block;
+}
+
+.block {
+  outline-style: solid;
+  outline-color: rgb(0, 0, 0);
+  background-color: #dec6b1;
+
+  width: 30%;
+  margin-left: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+  border-radius: 25px;
+}
+
+.block h2 {
+  color: rgb(247, 242, 242);
+  padding-left: 30%;
+  font-size: 50px;
+  margin-top: 0px;
+  text-shadow: 5px -1px 3px #fff, 5px 1px 3px #000000;
+}
+
+.block::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100px;
+  height: 50px;
+  border-top: 20px solid rgba(0, 0, 0, 1);
+  margin-left: 40%;
+  margin-top: -10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.block::after {
+  padding-left: 100px;
+}
+.block p {
+  margin-top: 30px;
+}
